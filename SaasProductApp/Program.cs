@@ -48,6 +48,11 @@ namespace SaasProductApp
             }
         }
 
+        /*
+         * This method is used to display imported software advice products.
+         * @params softwareProduct List<Product>
+         * */
+
         private static void DisplaySoftAdviceProducts(List<Product> softwareProduct)
         {
             foreach(Product prod in softwareProduct)
@@ -55,6 +60,11 @@ namespace SaasProductApp
                 Console.WriteLine("importing : Title : {0}, Categories : {1} , twitter : {2}", prod.Title, prod.Category, prod.Twitter);
             }
         }
+
+        /*
+         * This method is used to display imported capterra products.
+         * @params capterraProduct List<CapterraProduct>
+         * */
 
         private static void DisplayCapterraProducts(List<CapterraProduct> capterraProduct)
         {

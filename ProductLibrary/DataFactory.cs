@@ -11,7 +11,7 @@ namespace ProductLibrary
 
         //public static bool SaveProductsToDB(List<>)
         //{
-
+          // this class will be used to save data to db
         //}
     }
 }

@@ -9,6 +9,11 @@ namespace ProductLibrary
 {
     public sealed class Helper
     {
+        /*
+        * This method is used to log events.
+        * @params message string , msgType EventLogEntryType
+        * */
+
         internal static void LogEvent(string message, EventLogEntryType msgType)
         {
             try
