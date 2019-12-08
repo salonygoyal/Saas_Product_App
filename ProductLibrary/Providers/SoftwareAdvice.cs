@@ -31,6 +31,7 @@ namespace ProductLibrary.Providers
                                 category += ",";
                         }
                         prod.Category = category;
+                        prod.ProviderName = "SoftwareAdvice";
                         importedProducts.Add(prod);
                     }
                     return importedProducts;

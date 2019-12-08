@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProductLibrary.ProviderProducts
 {
-    public class CapterraProduct : MainProduct
+    public class MainProduct
     {
-        
-        public string Name { get; set; }
-        
+
+        public string Twitter { get; set; }
+
+        public string Category { get; set; }
+
+        public string ProviderName { get; set; }
     }
 }

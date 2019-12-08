@@ -54,6 +54,7 @@
     <Compile Include="Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProviderProducts\CapterraProduct.cs" />
+    <Compile Include="ProviderProducts\MainProduct.cs" />
     <Compile Include="ProviderProducts\SoftwareAdviceProduct.cs" />
     <Compile Include="Providers\Capterra.cs" />
     <Compile Include="Providers\SoftwareAdvice.cs" />

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ProductLibrary.Providers;
 using ProductLibrary.ProviderProducts;
+using ProductLibrary;
 
 namespace SaasProductApp
 {
@@ -43,7 +44,7 @@ namespace SaasProductApp
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.StackTrace);
             }
         }
 
@@ -51,9 +52,6 @@ namespace SaasProductApp
         {
             foreach(Product prod in softwareProduct)
             {
-                string category = "";
-                int index = 0;
-
                 Console.WriteLine("importing : Title : {0}, Categories : {1} , twitter : {2}", prod.Title, prod.Category, prod.Twitter);
             }
         }
@@ -64,7 +62,7 @@ namespace SaasProductApp
             {
                 Console.WriteLine(
                              "importing : name: {0}, tags: {1} ,twitter: {2}",
-                             prod.name , prod.tags , prod.twitter
+                             prod.Name , prod.Category , prod.Twitter
                          );
             }
         }

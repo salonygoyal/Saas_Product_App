@@ -28,9 +28,10 @@ namespace ProductLibrary.Providers
                     foreach (YamlMappingNode item in items)
                     {
                         CapterraProduct tempProduct = new CapterraProduct();
-                        tempProduct.name = Convert.ToString(item.Children[new YamlScalarNode("name")]);
-                        tempProduct.tags = Convert.ToString(item.Children[new YamlScalarNode("tags")]);
-                        tempProduct.twitter = Convert.ToString(item.Children[new YamlScalarNode("twitter")]);
+                        tempProduct.Name = Convert.ToString(item.Children[new YamlScalarNode("name")]);
+                        tempProduct.Category = Convert.ToString(item.Children[new YamlScalarNode("tags")]);
+                        tempProduct.Twitter = Convert.ToString(item.Children[new YamlScalarNode("twitter")]);
+                        tempProduct.ProviderName = "Capterra";
                         product.Add(tempProduct);
                     }
                     return product;
